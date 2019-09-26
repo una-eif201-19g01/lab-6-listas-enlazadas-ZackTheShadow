@@ -5,8 +5,25 @@
 #ifndef LAB_6_LISTAS_ENLAZADAS_LIBRO_H
 #define LAB_6_LISTAS_ENLAZADAS_LIBRO_H
 
+#include <string>
+#include <ostream>
 
 class Libro {
+		
+	int id;
+
+	public:
+		Libro();
+
+		Libro(int id);
+
+		virtual ~Libro();
+
+		int getId();
+
+		void setId(int id);
+
+		std::string toString();
 
 };
 
